@@ -4,9 +4,47 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Background Image Example</title>
-        <link rel="stylesheet" href="../css/index.css">
+        <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
-        <div class="title-box">Bitesize Stories Library</div>
+        <div class="title-box">Bytesize Stories Library</div>
+        <div class="popup-box">
+            Welcome, {username}
+            <br>
+            Your unique ID is: {unique_id}
+            <br>
+            Be sure to use this information on your next login!
+        </div>
+
+        <div class="cards-row">
+            <div class="card">
+                <h2 class="card-title">View Libraries</h2>
+                <button class="card-btn btn-blue">
+                    My Library
+                    <img src="../assets/3books.png" alt="Library Books" class="btn-icon">
+                </button>
+                <button class="card-btn btn-purple">
+                    Full Library
+                    <img src="../assets/3books.png" alt="Library Books" class="btn-icon">
+                </button>
+            </div>
+
+            <div class="card">
+                <h2 class="card-title">Tools</h2>
+                <button class="card-btn btn-green">
+                    Create Story
+                    <img src="../assets/open_book.png" alt="Library Books" class="btn-icon">
+                </button>
+                <button class="card-btn btn-yellow">
+                    View Quiz
+                    <img src="../assets/notepad.png" alt="Library Books" class="btn-icon">
+                </button>
+            </div>
+        </div>
+
+        <button class="exit-btn btn-red">
+            Exit Library
+            <img src="../assets/x_icon.png" alt="Library Books" class="btn-icon">
+        </button>
     </body>
 </html>
