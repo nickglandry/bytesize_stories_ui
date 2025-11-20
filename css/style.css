@@ -30,6 +30,17 @@ body {
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
 
+.subtitle-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 1000px;
+    padding: 20px 35px;
+    border-radius: 15px;
+    font-size: 28px;
+    font-family: 'Inter', Arial, sans-serif;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
 .popup-box {
     background-color: rgba(255, 255, 255, 0.85);
     padding: 20px 30px;
@@ -153,6 +164,95 @@ body {
 .btn-icon {
     width: 40px;
     height: 40px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+/* Code for the quiz object */
+/* Container to center everything vertically and horizontally */
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.quiz-question {
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px 20px;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    width: 100%;
+    line-height: 1.5;
+    border: 2px solid black;  
+}
+
+.quiz-answers {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 90%;
+}
+
+.quiz-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 16px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    box-sizing: border-box;
+    color: black;
+    background-color: white;
+    border: 2px solid black;  
+}
+
+.quiz-btn.selected {
+    background-color:lightgray;
+}
+
+.decision-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    gap: 150px;
+}
+
+.decision-btn {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    padding: 0px 20px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    box-sizing: border-box;
+}
+
+/* Code for the account creation page */
+.hero-img {
+    width: 400px;
+    height: 400px;
     margin-right: 8px;
     vertical-align: middle;
 }
