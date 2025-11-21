@@ -1,7 +1,8 @@
 body {
     background-image: url('../assets/background.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-repeat: repeat-y;
+    background-size: 102%;
 
     margin: 0;
     padding: 0;
@@ -255,4 +256,43 @@ body {
     height: 400px;
     margin-right: 8px;
     vertical-align: middle;
+}
+
+/* Styling for the library */
+.library-book {
+    /* flex: 0 0; */
+    background-image: url("../assets/vertical_book_cropped.png");
+    background-size: contain;
+    min-width: 199px;
+    min-height: 249px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* background-color: #BF5252; */
+    padding-top: 50px;
+    margin: 12px;
+}
+
+.library-shelf {
+    background-color: #c39d6b;
+    border-radius: 5px;
+    /* max-width: 60%; */
+    width: 70%;
+    /* justify-self: center; */
+    /* align-self: top; */
+}
+
+.library-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    justify-self: center;
+    max-width: 60%;
+    overflow: auto;
+    margin-bottom: -30px;
+}
+
+.library-section::-webkit-scrollbar {
+    display: none;
 }
