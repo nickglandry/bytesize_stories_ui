@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Code Sample</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="title-box">Code Sample</div>
+
+    <div class="code-container">
+        <div class="code-field">
+            <pre>
+                def main():
+                    # Ask the user for their name
+                    name = input("What’s your name? ")
+                    
+                    # Print a greeting
+                    print(f"\nHello, {name}! 👋 Welcome!\n")
+                    
+                    # ASCII art (a little cat)
+                    ascii_art = r"""
+                    /\_/\  
+                    ( o.o ) 
+                    > ^ <
+                    """
+                    
+                    print(ascii_art)
+
+                if __name__ == "__main__":
+                    main()
+            </pre>
+        </div>
+
+        <div class="story-buttons-row">
+            <button class="card-btn btn-red">
+                Close Story
+                <img src="../assets/x_icon.png" alt="X Icon" class="btn-icon">
+            </button>
+            <button class="card-btn btn-green">
+                Continue Story
+                <img src="../assets/right_arrow.png" alt="Right Arrow" class="btn-icon">
+            </button>
+        </div>
+    </div>
+</body>
+</html>

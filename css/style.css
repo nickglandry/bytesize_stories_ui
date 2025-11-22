@@ -42,6 +42,24 @@ body {
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
 
+.story-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 1000px;
+  height: 600px;
+  max-height: 600px;
+  padding: 20px 35px;
+  border-radius: 15px;
+  font-size: 28px;
+  font-family: 'Inter', Arial, sans-serif;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+
+  overflow-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+  overflow-y: auto;
+}
+
 .popup-box {
     background-color: rgba(255, 255, 255, 0.85);
     padding: 20px 30px;
@@ -308,4 +326,44 @@ body {
 
 .library-section::-webkit-scrollbar {
     display: none;
+}
+
+.code-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.code-field {
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px 20px;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 20px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    width: 100%;
+    line-height: 1.5;
+    border: 2px solid black;  
+}
+
+.story-buttons-row {
+  position: fixed;
+  bottom: 20px;
+  left: 20%;
+  right: 20%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  pointer-events: none;
+}
+
+.story-buttons-row button {
+  flex: 0 0 300px;
+  pointer-events: auto;
+  padding: 10px;
 }
